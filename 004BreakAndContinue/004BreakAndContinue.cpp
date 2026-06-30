@@ -6,13 +6,16 @@ int main(){
 
     vector<string> names={"Mary","Jane","Charles","Ana","Txulio","John","Joe"};
 
-    string random_name="Ana";
+    string random_name="Txulio";
 
-    for (string n: names){
+    for ( int i=0; i<names.size(); i++){
+    //for (string n: names){
 
-        if ( (n.compare(random_name))==0 ){
+        if ( names[i] == random_name ){
+        //if ( (n.compare(random_name))==0 ){
 
-            cout << "Name found. Name: " << random_name << " found at position " << n << endl;
+            cout << "Name found. Name: " << random_name << " found at position " << i << endl;
+            //cout << "Name found. Name: " << random_name << " found at position " << n << endl;
 
             break;
 
